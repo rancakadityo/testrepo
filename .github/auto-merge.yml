@@ -8,14 +8,15 @@ mergeMethod: squash
 blockingLabels:
 - hotfix
 
-minApprovals:
-  CONTRIBUTOR: 2
-
 requiredLabels:
 - qa-approve
 
 rules:
-  - requiredBaseBranches:
-    - develop
-  - requiredReviewers:
+- requiredBasebranch : develop
+  minApprovals:
+    CONTRIBUTOR: 3
+  requiredReviewers:
     - tokopedia-ios-bot
+
+- minApprovals:
+  CONTRIBUTOR: 2
