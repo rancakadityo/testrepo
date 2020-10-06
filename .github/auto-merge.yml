@@ -1,2 +1,21 @@
+# Configuration for probot-auto-merge - https://github.com/bobvanderlinden/probot-auto-merge
+
+deleteBranchAfterMerge: true
+reportStatus: true
+
+mergeMethod: squash
+
+blockingLabels:
+- hotfix
+
 minApprovals:
-  OWNER: 1
+  CONTRIBUTOR: 2
+
+requiredLabels:
+- qa-approve
+
+rules:
+  - requiredBaseBranches:
+    - develop
+  - requiredReviewers:
+    - tokopedia-ios-bot
