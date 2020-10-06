@@ -17,6 +17,5 @@ rules:
     CONTRIBUTOR: 3
   requiredReviewers:
     - tokopedia-ios-bot
-
 - minApprovals:
   CONTRIBUTOR: 2
