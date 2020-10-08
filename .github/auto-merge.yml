@@ -17,3 +17,7 @@ rules:
     - tokopedia-ios-bot
   requiredLabels:
     - qa-approve
+- minApprovals:
+    CONTRIBUTOR: 2
+  requiredLabels:
+    - qa-approve
