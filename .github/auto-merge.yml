@@ -17,8 +17,8 @@ rules:
     - tokopedia-ios-bot
   requiredLabels:
     - qa-approve
-- requiredBaseBranches:
-    - regex: ^feature
+- blockingBaseBranches:
+    - develop
   minApprovals:
     CONTRIBUTOR: 2
   requiredLabels:
