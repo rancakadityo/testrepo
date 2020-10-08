@@ -10,12 +10,3 @@ blockingLabels:
 
 requiredLabels:
 - qa-approve
-
-rules:
-- requiredBasebranch : develop
-  minApprovals:
-    CONTRIBUTOR: 3
-  requiredReviewers:
-    - tokopedia-ios-bot
-- minApprovals:
-  CONTRIBUTOR: 2
