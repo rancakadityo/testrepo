@@ -10,12 +10,6 @@ blockingLabels:
 
 rules:
 - requiredBaseBranches:
-    - regex: ^feature
-  minApprovals:
-    CONTRIBUTOR: 2
-  requiredLabels:
-    - qa-approve
-- requiredBaseBranches:
     - develop
   minApprovals:
     CONTRIBUTOR: 3
