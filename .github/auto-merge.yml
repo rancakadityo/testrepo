@@ -10,3 +10,15 @@ blockingLabels:
 
 requiredLabels:
 - qa-approve
+
+rules:
+- requiredBaseBranches:
+    - develop
+  minApprovals:
+    CONTRIBUTOR: 3
+  requiredReviewers:
+    - tokopedia-ios-bot
+- requiredBaseBranches:
+    - regex: ^feature
+  minApprovals:
+    CONTRIBUTOR: 2
