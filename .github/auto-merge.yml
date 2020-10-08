@@ -8,9 +8,6 @@ mergeMethod: squash
 blockingLabels:
 - hotfix
 
-requiredLabels:
-- qa-approve
-
 rules:
 - requiredBaseBranches:
     - develop
@@ -18,7 +15,11 @@ rules:
     CONTRIBUTOR: 3
   requiredReviewers:
     - tokopedia-ios-bot
+  requiredLabels:
+    - qa-approve
 - requiredBaseBranches:
     - regex: ^feature
   minApprovals:
     CONTRIBUTOR: 2
+  requiredLabels:
+    - qa-approve
